@@ -10,8 +10,8 @@ import java.util.StringTokenizer;
 
 public class For {
 
-	public static void main(String[] args) { //throws IOException
-		Scanner in = new Scanner(System.in);
+	public static void main(String[] args) { //  throws IOException
+		//Scanner in = new Scanner(System.in);
 //		int dan = in.nextInt();
 //		if (dan >= 1 && dan <= 9) {
 //			for (int i = 1; i <= 9; i++) {
@@ -49,29 +49,54 @@ public class For {
 //
 //		System.out.println(sum);
 
-//		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-//        int n = Integer.parseInt(bf.readLine());
-//        for(int i = 0; i < n; i++){
-//            String s = bf.readLine();
-//            int a = Integer.parseInt(s.split(" ")[0]);
-//            int b = Integer.parseInt(s.split(" ")[1]);
-//            bw.write(a+b+"\n");
-//        }
-//        bw.flush();
-
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		try {
+	
+        int n;
+		
+			n = Integer.parseInt(bf.readLine());
+			
+			 for(int i = 0; i < n; i++){
+		            String s = bf.readLine();
+		            int a = Integer.parseInt(s.split(" ")[0]);
+		            int b = Integer.parseInt(s.split(" ")[1]);
+		            bw.write(a+b+"\n");
+			 }   
+			 
+			 bw.flush();
+		            
+		} catch (NumberFormatException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+	        
+	        try {
+				bw.close();
+				bf.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+       
+        
+        
+        
+        
 //		
 //		int n = in.nextInt();
 //		for(int i = 1; i <= n ; i ++) {
 //			System.out.println(i);
 //		}
 
-		
-		int n = in.nextInt();
-		for(int i = n; i >= 1 ; i--) {
-			System.out.println(i);
-		}
-		
+//		
+//		int n = in.nextInt();
+//		for(int i = n; i >= 1 ; i--) {
+//			System.out.println(i);
+//		}
+//		
 		
 		
 		
