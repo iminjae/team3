@@ -11,7 +11,7 @@ public class coding2 {
     		int num2 = sc.nextInt();
 
     		if (num1 >= -10000 && num2 <= 10000) {
-    			if (num1 > num2) {
+    			if (num1 > num2) { 
     				System.out.println(">");
     			} else if (num1 < num2) {
     				System.out.println("<");
@@ -85,6 +85,8 @@ public class coding2 {
 			
 			System.out.println(H+" "+M);
 		}
+		
+		
      
      
 
