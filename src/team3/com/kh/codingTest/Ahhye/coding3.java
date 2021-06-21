@@ -59,7 +59,7 @@ public class coding3 {
     	}
         
         public static void c15552() {
-        	BufferedReader bf = new BufferedReader
+        	BufferedReader bf = new BufferedReader();
     		
     		
         }
