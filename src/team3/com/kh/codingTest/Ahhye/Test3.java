@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
-public class coding3 {
+public class Test3 {
 	
 
         public static void C2739() {
@@ -119,13 +119,85 @@ public class coding3 {
     		}
 		}
 		
+		public static void c11021() {
+			Scanner sc = new Scanner(System.in);
+		
+			int t = sc.nextInt();
+    		int i = 1;;
+    		for(i=1; i<=t; i++) {
+    			int a = sc.nextInt();
+    			int b = sc.nextInt();
+    			System.out.println( "Case #" + i + ": " + (a+b));
+    		}
+		}
+		
+		public static void c11022() {
+			Scanner sc = new Scanner(System.in);
+		
+			int t = sc.nextInt();
+    		int i = 1;;
+    		for(i=1; i<=t; i++) {
+    			int a = sc.nextInt();
+    			int b = sc.nextInt();
+    			System.out.println( "Case #" + i + ": " + a + " + " + b + " = " + (a+b));
+    		}
+		}
+		
+		public static void c2438() {
+			Scanner sc = new Scanner(System.in);
+			int num = sc.nextInt();
+			
+			for(int i=1; i <=num; i++) {
+				for(int j=1; j <= i; j++) {
+					System.out.print( "*");
+				}
+				System.out.println();
+			}
+			
+		}
+		
+		
+		//????
+		public static void c2439() {
+			Scanner sc = new Scanner(System.in);
+			int num = sc.nextInt();
+			
+			for(int i=1; i <=num; i++) {
+				for(int j=1; j <= num-i; j++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+			
+		}
+		
+		public static void c10871() {
+			Scanner sc = new Scanner(System.in);
+			int size = sc.nextInt();
+			int num = sc.nextInt();
+			
+			int[] arr = new int[size];
+			
+			for(int i=0; i < size; i++) {
+				int random = sc.nextInt();
+				
+				arr[i] = random;
+			}
+			
+			for(int i=0; i < size; i++) {				
+				if(num > arr[i]) {
+					System.out.print(arr[i] + " ");
+				}				
+			}
+		}
+		
 		
      
-     
+
 
     	// 실행
     	public static void main(String[] args) {
-    		c15552();
+    		c10871();
 
     	}
      

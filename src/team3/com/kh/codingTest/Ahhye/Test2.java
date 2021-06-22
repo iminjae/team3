@@ -2,7 +2,7 @@ package team3.com.kh.codingTest.Ahhye;
 
 import java.util.Scanner;
 
-public class coding2 {
+public class Test2 {
 	
 
         public static void b1330() {
