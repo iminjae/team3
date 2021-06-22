@@ -1,7 +1,10 @@
 package team3.com.kh.codingTest;
 
+import java.util.Scanner;
+
 public class test {
-    public static void a2557() {
+
+    public staticayeong void a2557() {
   		System.out.println("Hello World!");
   	}
       
@@ -31,9 +34,23 @@ public class test {
       public static void name() {
     	  
     	  System.out.println("3팀");
-    	  
+    	  ㄴㄴ
     	  
       }
+
+    
+    public static void a1000() {
+    	//첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)
+    	Scanner sc= new Scanner(System.in);
+    	int num1 = sc.nextInt();
+    	int num2 = sc.nextInt();
+    	
+    	if(num1 > 0 && num2 <10) {
+    		System.out.println(num1 + num2);
+    	}
+    	
+    }
+
 }
 
 

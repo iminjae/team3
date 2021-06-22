@@ -1,6 +1,10 @@
 package team3.com.kh.codingTest.Ahhye;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
 public class coding3 {
@@ -59,7 +63,37 @@ public class coding3 {
     	}
         
         public static void c15552() {
-        	BufferedReader bf = new BufferedReader
+        	   BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+               BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+             try {
+          
+               int n;
+             
+                n = Integer.parseInt(bf.readLine());
+                
+                 for(int i = 0; i < n; i++){
+                         String s = bf.readLine();
+                         int a = Integer.parseInt(s.split(" ")[0]);
+                         int b = Integer.parseInt(s.split(" ")[1]);
+                         bw.write(a+b+"\n");
+                 }   
+                 
+                 bw.flush();
+                         
+             } catch (NumberFormatException | IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+             }finally {
+                  
+                  try {
+                   bw.close();
+                   bf.close();
+                } catch (IOException e) {
+                   // TODO Auto-generated catch block
+                   e.printStackTrace();
+                }
+             }
+
     		
     		
         }
