@@ -9,6 +9,12 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class For {
+	
+	public static void q11021() {
+		
+		
+		
+	}
 
 	public static void main(String[] args) { //  throws IOException
 		//Scanner in = new Scanner(System.in);
