@@ -73,11 +73,30 @@ public class For {
 		}
 	}
 
+	public static void q10871() {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int x = in.nextInt();
+		
+		int[] arr = new int[n];
+		
+		for(int i = 0; i < arr.length; i++) {
+			int random = in.nextInt();
+			arr[i] = random;
+		}
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i]< x) {
+				System.out.print(arr[i]+" ");
+			}
+		}	
+	}
+	
 	public static void main(String[] args) { // throws IOException
 		// q11021();
 		// q11022();
 		// q2438();
-		q2439();
+		// q2439();
+		q10871();
 
 //		Scanner in = new Scanner(System.in);
 //		int dan = in.nextInt();
