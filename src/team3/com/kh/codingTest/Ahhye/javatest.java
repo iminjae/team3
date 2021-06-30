@@ -57,49 +57,34 @@ public class javatest {
 	}
 	
 	public static void method7() {
-		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[6];
 		
-		double[][] arr = new double[2][4];
-		
-		//합계 변수
-		int kosum = 0;
-		int ensum = 0;
-		//평균값 나눌 과목의 개수 변수
-		int length = 0;
-		
-		//초기화
-		for(int i=0; i <arr.length; i++) {
-			for(int j=0; j <arr[i].length-1; j++) {
-				//평균값 나눌 과목의 개수 저장
-				length = arr[i].length-1;
-				
-				if(i==0) {
-					System.out.println("국어점수 : ");
-					arr[0][j]=sc.nextDouble();
-					kosum += arr[0][j];
-					
-				}else {
-					System.out.println("영어점수 : ");
-					arr[1][j]=sc.nextDouble();
-					ensum += arr[1][j];
-				}
-				
-				arr[0][3] = kosum;
-				arr[1][3] = ensum;
-			}
-		}
-		
-		//출력
 		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[i].length; j++) {
-				System.out.print("  arr[" + i + "]" + "[" + j + "]  :  " + arr[i][j]);
+			arr[i] = (int) (Math.random() * 45 + 1);
+			for (int j = 0; j < i; j++) {
+				if (arr[i] == arr[j]) {
+					i--;
+					break;
+				}
 			}
-			System.out.println();
+		}
+//		Arrays.sort(arr);
+		
+		int temp = 0;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < i; j++) {
+				if (arr[i] < arr[j]) {
+					temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
 		}
 		
-		System.out.println("국어점수 평균 : " + arr[0][3] /length );
-		System.out.println("영어점수 평균 : " + arr[1][3] /length );
-		
+		for(int i =0; i <arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+
 	}
 	
 	public static void main(String[] args) {
