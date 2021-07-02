@@ -114,6 +114,8 @@ public class CT_03 {
 				System.out.print(num[i] + " ");
 			}
 		}
+		
+		
 	}
 
 }
