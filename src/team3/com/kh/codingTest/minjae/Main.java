@@ -1,7 +1,7 @@
 package team3.com.kh.codingTest.minjae;
 
-
 import java.util.Scanner;
+
 
 public class Main {
 
@@ -9,67 +9,62 @@ public class Main {
 		
 			Scanner sc = new Scanner(System.in);
 			
-		//for문 7번
-			/*int a = sc.nextInt(); 
-
-			
-			for(int i = 1; i <= a ; i++) {
+			/*//while-1
+			while(true) {
+				int a = sc.nextInt();
+				int b = sc.nextInt();
 				
-				int num1 = sc.nextInt();
-				int num2 = sc.nextInt();
-				int result = num1 + num2;
-				System.out.println("Case #"+ i+": "+result);
-				
-		} */
-			
-		//for문 8번
-			/*int a = sc.nextInt(); 
-
-			
-			for(int i = 1; i <= a ; i++) {
-				
-				int num1 = sc.nextInt();
-				int num2 = sc.nextInt();
-				int result = num1 + num2;
-	            
-				System.out.println("Case #"+ i+": "+num1+" + "+num2+" = "+result);
-			
-		}*/
-			
-		//for문 9번
-			/*int a = sc.nextInt();
-			
-			for(int i = 1; i <= a; i++) {
-				for(int j = 1; j<= i; j++) {
+				if(a==0 && b==0) {
+					break;
+				}else {
+					System.out.println(a+b);
+				}
 					
-					System.out.print("*");
-				}
-				System.out.println();
+				
+			} */
+			
+			
+			//while-2
+			
+			int a = sc.nextInt();
+			int count = 0;
+			
+			
+			
+			while(true) {
+				
+				/*
+				int front = a % 10; //ㅇ 입력받은수앞  2
+				int back = a / 10; // 입력받은수 뒤 6
+				
+				int result = front + back; //합친값  8
+				
+				int resultBack = result /10;//깂 뒤 8
+				
+				int result2 = (resultBack * 10) + (result /10);//값뒤 6 + result8
+				*/
+				
+				
+				a = ((a % 10 * 10) + ((a/10)+(a%0)) % 10);
+				
+				count++;
+				
+				
+				
+				int result = a;
+				
 			
 				
 				
-			}*/
-			
-		//for문 10번
-			/*int a = sc.nextInt();
-			
-			for(int i = 0; i < a; i++) {
 				
-				for(int j = a; j > i+1; j--) {
-					System.out.print(" ");
-				}
-				for(int k = 0; k < i+1; k++) {
-					System.out.print("*");
-					
-				}
-				System.out.println();
+				if(result == a ) {
 				
-			}*/
+				break;
+				
+			}
 			
-		//for문 11번
 			
-			
-		
-		
+		}
+			System.out.println(count);
 	}
 }
