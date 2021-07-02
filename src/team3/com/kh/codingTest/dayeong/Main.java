@@ -1,31 +1,57 @@
-package team3.com.kh.codingTest.dayeong.ch01;
+package team3.com.kh.codingTest.dayeong;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("Hello World!");
+		int[] arr = new int[6];
+		
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int)(Math.random()*45+1);
+			for (int j = 0; j < i; j++) {
+				if (arr[i] == arr[j]) {
+					i--;
+					break;
+				}
+			}
+		}
+		int temp= 0;
+		for (int i = 0; i < arr.length; i ++) {
+			for(int j = 0; j < i; j ++) {
+				if(arr[i]<arr[j])
+				temp = arr[i];
+				arr[i]=arr[j];
+				arr[j]= temp;
+			}
+		}
+		
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
 
-		System.out.println("강한친구 대한육군");
-		System.out.println("강한친구 대한육군");
-
-		System.out.println("\\    /\\");
-		System.out.println(" )  ( ')");
-		System.out.println("(  /  )");
-		System.out.println(" \\(__)|");
-
-		System.out.println("|\\_/|");
-		System.out.println("|q p|   /}");
-		System.out.println("( 0 )\"\"\"\\");
-		System.out.println("|\"^\"`    |");
-		System.out.println("||_/=\\\\__|");
-
-		Scanner sc = new Scanner(System.in);
-		int A = sc.nextInt();
-		int B = sc.nextInt();
-		System.out.println(A+B);
+//		System.out.println("Hello World!");
+//
+//		System.out.println("강한친구 대한육군");
+//		System.out.println("강한친구 대한육군");
+//
+//		System.out.println("\\    /\\");
+//		System.out.println(" )  ( ')");
+//		System.out.println("(  /  )");
+//		System.out.println(" \\(__)|");
+//
+//		System.out.println("|\\_/|");
+//		System.out.println("|q p|   /}");
+//		System.out.println("( 0 )\"\"\"\\");
+//		System.out.println("|\"^\"`    |");
+//		System.out.println("||_/=\\\\__|");
+//
+//		Scanner sc = new Scanner(System.in);
+//		int A = sc.nextInt();
+//		int B = sc.nextInt();
+//		System.out.println(A+B);
 
 //		Scanner sc = new Scanner(System.in);
 //		double A = sc.nextInt();
@@ -111,7 +137,7 @@ public class Main {
 //			}
 //
 //		}
-//
+
 
 	}
 }
