@@ -40,8 +40,6 @@ public class DimensionPractice {
 		
 		*/
 		int sum[][] = new int[4][4];
-
-		
 		
 		for (int i =0;i<sum.length-1;i++) {
 			for(int j =0;j<sum[i].length-1;j++) {
@@ -62,14 +60,17 @@ public class DimensionPractice {
 		}
 
 		for (int i =0;i<sum.length;i++) {
+			
+			
 			for(int j =0;j<sum[i].length;j++) {
 
 				System.out.print(sum[i][j]+" ");
 	
 			}
 			System.out.println();
-			
 		}
+		
+		int a []=new int[] {1,2,3,4,5} ;
 	}
-
+	
 }
